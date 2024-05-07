@@ -163,6 +163,7 @@ p {
 .current {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
 }
 
 .current::after {
@@ -213,14 +214,15 @@ p {
 .hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
+  background-size: cover;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background_img/people-office\ 1\ light.jpg);
+    url(../images/background_img/people_office_light.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
 }
 
 .hero-header {
@@ -243,6 +245,7 @@ p {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -298,8 +301,6 @@ p {
 
 .advant-icon {
   /* fill: #4d5ae5; */
-  width: 64px;
-  height: 64px;
 }
 
 /* ====================  Team  ========================== */
@@ -375,6 +376,11 @@ p {
 .team-icon-link:focus {
   background-color: #404bbf;
 }
+.icon-phas {
+  fill: #f4f4fd;
+}
+.icon-media {
+}
 
 /* ================   Portfolio   ==================== */
 
@@ -419,16 +425,19 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* #f4f4fd;  */
+  fill: #f4f4fd;
   padding: 40px 32px;
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-imag-altcard:hover {
+  transform: portfolio-imag-altcard;
+}
+.portfolio-imag-altcard {
+  transform: translateY(100%);
 }
 
 .portfolio-item:hover {
