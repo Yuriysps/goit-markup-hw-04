@@ -438,13 +438,10 @@ p {
   color: #f4f4fd;
 }
 
-.portfolio-imag-overlay {
+.portfolio-overlay-text {
   position: absolute;
   transform: translateY(100%);
   top: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   fill: #f4f4fd;
   padding: 40px 32px;
   background-color: #4d5ae5;
